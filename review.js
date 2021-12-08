@@ -118,6 +118,7 @@ undefined;
 /**
  CONDITIONALS
  */
+let someBoolean = true;
 
 if (someBoolean) {
     // then, do this
@@ -189,20 +190,20 @@ for (let i in beverages) {
 }
 
 // while
-let forcast;
-while (forcast.windSpeed < 50) {
-    forcast = goAskTheWeatherService();
-}
-sendAMessagetoMortensenToStopTheCranse();
+// let forcast;
+// while (forcast.windSpeed <= 50) {
+//     forcast = goAskTheWeatherService();
+// }
+// sendAMessagetoMortensenToStopTheCranse();
 
-let isGameRunning = true;
-while (isGameRunning) {
-    nextTick();
-}
+// let isGameRunning = true;
+// while (isGameRunning) {
+//     nextTick();
+// }
 
-$('#stopButton').on('click', function () {
-    isGameRunning = false;
-});
+// $('#stopButton').on('click', function () {
+//     isGameRunning = false;
+// });
 
 /**
 Functions!!!
@@ -217,7 +218,7 @@ function generateSong(words, notes) {
     ${words} ${words} ${words}
     ${words} ${words} ${words}
     🥁
-    `
+    `;
     return songs;
 }
 
@@ -233,7 +234,7 @@ function sum(n1, n2) {
 // function expression
 // Create an anonymous function
 // and assign it to a variable called sum
-let sum = function (n1, n2) {
+let sum2 = function (n1, n2) {
     return n1 + n2;
 }
 
@@ -321,4 +322,58 @@ function checkPenguins (penguinsArray) {
 
 console.log('The cute ones are:', checkPenguins(penguins));
 
+// Contructor function is for creating objects
 
+function Hat(type, color, size) {
+    this.type = type,
+    this.color = color,
+    this.size = size
+};
+
+const averageTopHat = new Hat('Top', 'black', 14);
+const fedora = new Hat('Fedora', 'Off-charcoal', 10);
+const funnyHat = new Hat('Funny', 'Rainbow', 18);
+
+console.log(`Our Fedora is size ${federo.size}`);
+
+function printNat(hatInput) {
+    console.log(`Hat type is ${hatInput.type}`);
+    console.log(`Hat color is ${hatInput.color}`);
+};
+printHat(fedora);
+printHat({type: 'Baseball', color: 'blue', size: 12});
+
+/*
+console.log('NOTE December 8th by Edan')
+
+// normal function
+
+function giveEmployeeARaise(employee) {
+    employee.salary += 1000;
+    return employee;
+}
+*/
+console.log( 'ARROW Function');
+
+let giveEmployeeARaise =  (employee) => {
+    employee.salary += 1000;
+    return employee;
+}
+
+let edan = {
+    name: 'Edan',
+    salary: 1001000,
+    title: 'instructor'
+}
+
+
+
+let updateEdan = giveEmployeeARaise(edang);
+
+let addNumbers = (firstNumber, secondNumber) => {
+    return firstNumber + secondNumber;
+}
+
+// let addNumbers = (firstNumber, secondNumber) => firstNumber + secondNumber;  this work when it's only one line
+
+addNumbers(5, 3);
