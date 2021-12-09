@@ -300,24 +300,28 @@ let buildings = [
 console.log('building is', buildings);
 
 const penguins = [
-    {name: 'Emperor',
-    isCute: true
+    {
+        name: 'Emperor',
+        isCute: true
     },
-    {name: 'Sea Gull',
-    isCute: false
+    {
+        name: 'Sea Gull',
+        isCute: false
     },
-    {name: 'little',
-    isCute: true}
+    {
+        name: 'little',
+        isCute: true
+    }
 ];
 
-function checkPenguins (penguinsArray) {
+function checkPenguins(penguinsArray) {
     let cutePenguins = [];
     for (let i = 0; i < penguinsArray.length; i++) {
         if (penguinsArray[i].isCute) {
             cutePenguins.push(penguinsArray[i].name)
         }
     }
-        return cutePenguins;
+    return cutePenguins;
 }
 
 console.log('The cute ones are:', checkPenguins(penguins));
@@ -326,8 +330,8 @@ console.log('The cute ones are:', checkPenguins(penguins));
 
 function Hat(type, color, size) {
     this.type = type,
-    this.color = color,
-    this.size = size
+        this.color = color,
+        this.size = size
 };
 
 const averageTopHat = new Hat('Top', 'black', 14);
@@ -341,7 +345,7 @@ function printNat(hatInput) {
     console.log(`Hat color is ${hatInput.color}`);
 };
 printHat(fedora);
-printHat({type: 'Baseball', color: 'blue', size: 12});
+printHat({ type: 'Baseball', color: 'blue', size: 12 });
 
 /*
 console.log('NOTE December 8th by Edan')
@@ -353,9 +357,9 @@ function giveEmployeeARaise(employee) {
     return employee;
 }
 */
-console.log( 'ARROW Function');
+console.log('ARROW Function');
 
-let giveEmployeeARaise =  (employee) => {
+let giveEmployeeARaise = (employee) => {
     employee.salary += 1000;
     return employee;
 }
@@ -368,7 +372,7 @@ let edan = {
 
 
 
-let updateEdan = giveEmployeeARaise(edang);
+let updateEdan = giveEmployeeARaise(edan);
 
 let addNumbers = (firstNumber, secondNumber) => {
     return firstNumber + secondNumber;
@@ -377,3 +381,21 @@ let addNumbers = (firstNumber, secondNumber) => {
 // let addNumbers = (firstNumber, secondNumber) => firstNumber + secondNumber;  this work when it's only one line
 
 addNumbers(5, 3);
+
+// HTML  - css and js go into html to make it look good
+// CSS  -   make HTML looks good use <link> </link>
+// JS   -   how it behaves use <scr>
+
+// All the ( 3 ) above is client side 👆
+
+// an element have <> </>  like <h1>
+// attribute is id=""  class=""  always a string and use double quotes, anything = is attri
+// <img scr=" "  /> is a self closing element
+
+// <span> </span> is an inline element, everything is in one line
+// width and heights, padding, border, margin
+// bootstrap website to learn css
+// google css generator
+// flex box froggy
+
+
